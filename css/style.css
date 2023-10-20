@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;800&family=Manrope:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero .hero-container {
+  height: 100vh;
+  padding: 6em;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.hero .hero-container .hero__greet {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.hero .hero-container .hero__greet h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}
+.hero .hero-container .team__member {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.hero .hero-container .team__member .member-item {
+  height: 100%;
+}
+.hero .hero-container .team__member .member-item a {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero .hero-container .team__member .member-item a .member-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0em 2em 2em 2em;
+}
+.hero .hero-container .team__member .member-item a .member-bio h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+}
+.hero .hero-container .team__member .member-item a .member-bio h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+}
+.hero .hero-container .team__member .member-item a .member-1 {
+  background-image: url("http://localhost/jtk-pr/member/daffa/image/daffa.jpg");
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.hero .hero-container .team__member .member-item a .member-2 {
+  background-image: url("http://localhost/jtk-pr/member/ilham/ilham.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+.hero .hero-container .team__member .member-item a .member-3 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/myfoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.hero .hero-container .team__member .member-item a:hover {
+  background-color: #C0EA6A;
+}
+.hero .hero-container .team__member .member-item a:hover .member-bio h1 {
+  color: #FFFFFF;
+}
+.hero .hero-container .team_uni {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.hero .hero-container .team_uni h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}/*# sourceMappingURL=style.css.map */

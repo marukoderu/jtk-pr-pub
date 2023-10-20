@@ -1,0 +1,786 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;800&family=Manrope:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-container {
+  background-color: #2a312f;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 6em;
+}
+.nav-container .nav__logo {
+  font-family: "Gabarito", sans-serif;
+  color: #C0EA6A;
+}
+.nav-container .nav__logo h1 {
+  font-size: 2.5rem;
+}
+.nav-container .nav__menus {
+  display: flex;
+  height: 100%;
+}
+.nav-container .nav__menus nav {
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav__menus nav a {
+  align-self: center;
+  font-family: "Gabarito", sans-serif;
+  color: #FFFFFF;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 1em;
+  font-size: 1.75rem;
+}
+.nav-container .nav__menus nav .active {
+  background-color: #C0EA6A;
+}
+.nav-container .nav__menus .nav-back {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-container .nav__menus .nav-back a {
+  padding: 0em 3em;
+  font-family: "Gabarito", sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.75rem;
+}
+
+.hero {
+  z-index: 1;
+  width: 100%;
+  padding-top: 4em;
+}
+.hero .hero-container .hero__title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  border-bottom: 2px solid #2a312f;
+}
+.hero .hero-container .hero__title .hero__title-1 {
+  padding-left: 6em;
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero-container .hero__title .hero__title-1 h1 {
+  font-size: 10vw;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}
+.hero .hero-container .hero__title .hero__title-1 p {
+  font-size: 2rem;
+  font-family: "Manrope", sans-serif;
+  margin-top: auto;
+  padding-bottom: 1.5em;
+}
+.hero .hero-container .hero__title .hero__title-2 {
+  padding-right: 4em;
+  border-left: 2px solid #2a312f;
+}
+.hero .hero-container .hero__title .hero__title-2 h1 {
+  font-size: 10vw;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}
+.hero .hero-container .hero__title .hero__title-2 .uniq-1 {
+  text-align: right;
+}
+.hero .hero-container .hero__title .hero__title-2 .uniq-2 {
+  padding-left: 0.25em;
+  color: #C0EA6A;
+}
+.hero .hero-container .marquee {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.hero .hero-container .marquee div {
+  display: flex;
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 25s linear infinite;
+}
+.hero .hero-container .marquee div span {
+  float: left;
+  width: 50%;
+  font-size: 2rem;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.hero .hero-container .hero__banner {
+  border-top: 2px solid #2a312f;
+}
+.hero .hero-container .hero__banner .hero__banner-wrap {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+}
+.hero .hero-container .hero__banner .hero__banner-wrap .hero-img {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/hero-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 20%;
+  height: 420px;
+}
+.hero .hero-container .hero__banner .hero__banner-wrap .hero-card {
+  background: rgb(244, 247, 240);
+  background: linear-gradient(133deg, rgb(244, 247, 240) 0%, rgba(192, 234, 106, 0.8043592437) 100%);
+  border-top: 2px solid #2a312f;
+  border-bottom: 2px solid #2a312f;
+  border-left: 2px solid #2a312f;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0em 1em 1.25em;
+}
+.hero .hero-container .hero__banner .hero__banner-wrap .hero-card p {
+  font-size: 2rem;
+  font-family: "Manrope", sans-serif;
+  padding-right: 9em;
+}
+.hero .hero-container .hero__banner .hero__banner-wrap .hero-card div {
+  margin-top: auto;
+}
+
+.profile .profile-container {
+  padding: 8em 6em 10em 6em;
+  height: 100vh;
+}
+.profile .profile-container .profile__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .profile-container .profile__title h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}
+.profile .profile-container .profile__title p {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+.profile .profile-container .profile__details {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 3em;
+  height: 100%;
+  padding: 6em 0em;
+}
+.profile .profile-container .profile__details .profile__details-list {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.profile .profile-container .profile__details .profile__details-list .details-list {
+  border-bottom: 2px solid #2a312f;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.profile .profile-container .profile__details .profile__details-list .details-list p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.75rem;
+}
+.profile .profile-container .profile__details .profile__details-list .details-list:hover {
+  background-color: #C0EA6A;
+  transition: 0.25s ease-in-out;
+}
+.profile .profile-container .profile__details .profile__details-img {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/myfoto-fix.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+}
+
+.sch .sch-container {
+  height: 100vh;
+  padding: 8em 6em 10em 6em;
+}
+.sch .sch-container .sch__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sch .sch-container .sch__title h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}
+.sch .sch-container .sch__title p {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+.sch .sch-container .sch__details {
+  height: 100%;
+}
+.sch .sch-container .sch__details .sch-imgs {
+  height: 250px;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  gap: 3em;
+}
+.sch .sch-container .sch__details .sch-imgs .sch-img-1 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/smk.png");
+  background-size: 80% 65%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.sch .sch-container .sch__details .sch-imgs .sch-img-2 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/sch.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+}
+.sch .sch-container .sch__details .sch-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sch .sch-container .sch__details .sch-names h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+}
+.sch .sch-container .sch__details .sch-about {
+  padding-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+.sch .sch-container .sch__details .sch-about p {
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+
+.exp {
+  background-color: #C0EA6A;
+}
+.exp .exp-container {
+  height: 100vh;
+  padding: 8em 6em 10em 6em;
+}
+.exp .exp-container .exp-wrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+  gap: 3em;
+}
+.exp .exp-container .exp-wrap .exp__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.exp .exp-container .exp-wrap .exp__title p {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+.exp .exp-container .exp-wrap .exp__title h1 {
+  margin-top: auto;
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  gap: 3em;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card {
+  border: 2px solid #2a312f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  gap: 3em;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card .exp-img-1 {
+  height: 100%;
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/exp1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card .exp-img-2 {
+  height: 100%;
+  background-image: url("http://localhost/jtk-pr//member/raihan/img/bit.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card .exp-card-title p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card .exp-card-title h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+}
+.exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+
+.project {
+  background-color: #2a312f;
+  height: 100vh;
+}
+.project .pro-container {
+  height: 100%;
+  padding: 4em 6em 10em 6em;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  align-items: center;
+}
+.project .pro-container .pro-col-1 {
+  height: 100%;
+}
+.project .pro-container .pro-col-1 h1 {
+  margin-top: auto;
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #C0EA6A;
+}
+.project .pro-container .pro-col-2 {
+  height: 100%;
+}
+.project .pro-container .pro-col-2 .pro-content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3em;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item {
+  height: 100%;
+  border: 2px solid #C0EA6A;
+  display: flex;
+  flex-direction: column;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title {
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2em;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title div {
+  padding: 1em 1em 0.5em 1em;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title div h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #F4F6F0;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title div h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #F4F6F0;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #F4F6F0;
+  padding-right: 3em;
+  padding-left: 1em;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+  padding-right: 5em;
+  padding: 1em;
+  background-color: #C0EA6A;
+  transition: 0.25s ease-in-out;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-title a:hover {
+  background-color: #F4F6F0;
+  transition: 0.25s ease-in-out;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-1 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/project-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: 0% 50%;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-2 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/project-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: 0% 50%;
+}
+.project .pro-container .pro-col-2 .pro-content .pro-item .pro-3 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/project-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: 0% 100%;
+}
+.project .pro-container .pro-col-3 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.project .pro-container .pro-col-3 p {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #C0EA6A;
+  text-align: right;
+}
+.project .project-container {
+  height: 100vh;
+  padding: 8em 6em 10em 6em;
+  display: flex;
+  align-items: center;
+}
+.project .project-container .project-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3em;
+}
+.project .project-container .project-wrap .title-1 h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #C0EA6A;
+  display: flex;
+  align-items: center;
+}
+.project .project-container .project-wrap .title-2 p {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #C0EA6A;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.project .project-container .project-wrap .contents {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+}
+.project .project-container .project-wrap .contents .content {
+  border: 2px solid #C0EA6A;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 2em;
+  border-radius: 25px;
+  gap: 2em;
+}
+.project .project-container .project-wrap .contents .content .content-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+}
+.project .project-container .project-wrap .contents .content .content-details h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: #F4F6F0;
+}
+.project .project-container .project-wrap .contents .content .content-details h5 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: #F4F6F0;
+}
+.project .project-container .project-wrap .contents .content .content-details p {
+  font-size: 1.75rem;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+  color: #F4F6F0;
+}
+.project .project-container .project-wrap .contents .content .content-details a {
+  font-size: 1.75rem;
+  font-weight: 300;
+  font-family: "Gabarito", sans-serif;
+  color: #F4F6F0;
+}
+.project .project-container .project-wrap .contents .content-1 .content-img {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/project-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  border-radius: 25px;
+  height: 250px;
+}
+.project .project-container .project-wrap .contents .content-2 .content-img {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/project-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
+  border-radius: 25px;
+  height: 250px;
+}
+.project .project-container .project-wrap .contents .content-3 .content-img {
+  background-image: url("/member/raihan/img/project-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  border-radius: 25px;
+  height: 250px;
+}
+
+.hobby {
+  background-color: #F4F6F0;
+}
+.hobby .hobby-container {
+  height: 100vh;
+  padding: 8em 6em 10em 6em;
+}
+.hobby .hobby-container .hobby-wrap {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  align-items: center;
+  gap: 2em;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1em;
+  row-gap: 2em;
+  padding: 2em 0em;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item {
+  height: auto;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-img {
+  height: 20em;
+  background-size: cover;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-1 {
+  background-image: url("https://www.gematsu.com/wp-content/uploads/2020/03/Genshin-Impact_03-17-20.jpg");
+  background-position: 0% 50%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-2 {
+  background-image: url("https://scontent.fbdo9-1.fna.fbcdn.net/v/t39.30808-6/343145817_645076570780934_4509320055641570240_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGQM4IBz2M1b7Uy_aCtJNOG10onBrY09_bXSicGtjT39v_yM6nXviIgdhwXIzLcu3q-fQS232UGRNlsyx_RyrgN&_nc_ohc=HWyJyt980RQAX9TAu02&_nc_ht=scontent.fbdo9-1.fna&oh=00_AfC9TqkyXOoifIxw4eZghz7e07WpM1odmXKvWnYtZWQ51g&oe=653727ED");
+  background-position: 15% 35%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-2 {
+  background-image: url("https://scontent.fbdo9-1.fna.fbcdn.net/v/t39.30808-6/343145817_645076570780934_4509320055641570240_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGQM4IBz2M1b7Uy_aCtJNOG10onBrY09_bXSicGtjT39v_yM6nXviIgdhwXIzLcu3q-fQS232UGRNlsyx_RyrgN&_nc_ohc=HWyJyt980RQAX9TAu02&_nc_ht=scontent.fbdo9-1.fna&oh=00_AfC9TqkyXOoifIxw4eZghz7e07WpM1odmXKvWnYtZWQ51g&oe=653727ED");
+  background-position: 15% 35%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-3 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/music.jpg");
+  background-position: 0% 50%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-4 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/animegif.gif");
+  background-position: 0% 50%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-5 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/design.png");
+  background-position: 0% 50%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-6 {
+  background-image: url("http://localhost/jtk-pr/member/raihan/img/lang.png");
+  background-position: 0% 50%;
+}
+.hobby .hobby-container .hobby-wrap .hobby-list .hobby-item h1 {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5em;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+}
+.hobby .hobby-container .hobby-wrap .hobby-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hobby .hobby-container .hobby-wrap .hobby-title h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  align-self: flex-end;
+}
+.hobby .hobby-container .hobby-wrap .hobby-title p {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  align-self: flex-end;
+}
+
+.contact .contact-container {
+  height: 100vh;
+  padding: 6em 6em 10em 6em;
+}
+.contact .contact-container .contact-wrap {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+.contact .contact-container .contact-wrap .contact-form {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.contact .contact-container .contact-wrap .contact-form div {
+  align-self: self-end;
+}
+.contact .contact-container .contact-wrap .contact-form div h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #2a312f;
+}
+.contact .contact-container .contact-wrap .contact-form div p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+}
+.contact .contact-container .contact-wrap .contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.contact .contact-container .contact-wrap .contact-form form input {
+  background-color: #F4F6F0;
+  border-left: 2px solid #2a312f;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  padding: 1em 2em 1em 2em;
+}
+.contact .contact-container .contact-wrap .contact-form input:focus {
+  outline: none;
+  border-left: 2px solid #C0EA6A;
+}
+.contact .contact-container .contact-wrap .contact-form textarea {
+  background-color: #F4F6F0;
+  border-left: 2px solid #2a312f;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  padding: 3em 2em 3em 2em;
+}
+.contact .contact-container .contact-wrap .contact-form textarea:focus {
+  outline: none;
+  border-left: 2px solid #C0EA6A;
+}
+.contact .contact-container .contact-wrap .contact-form button {
+  text-align: left;
+  background-color: #C0EA6A;
+  border: none;
+  padding: 1em 2em 1em 2em;
+}
+.contact .contact-container .contact-more {
+  align-self: self-start;
+}
+.contact .contact-container .contact-more .contact-list {
+  display: flex;
+}
+.contact .contact-container .contact-more .contact-list a {
+  width: 100%;
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+  padding: 1em 2em 1em 2em;
+  border-left: 2px solid #2a312f;
+}
+.contact .contact-container .contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.contact .contact-container .contact-title h1 {
+  font-size: 8rem;
+  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  color: #2a312f;
+}
+.contact .contact-container .contact-title p {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #2a312f;
+}
+
+footer {
+  background-color: #2a312f;
+}
+footer .foot-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .foot-container p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: #F4F6F0;
+}/*# sourceMappingURL=style.css.map */

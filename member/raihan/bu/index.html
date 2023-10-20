@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raihan is Here!</title>
+    <link rel="stylesheet" href="/member/raihan/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <!-- HEADER / NAV -->
+    <header>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Raihan</h1>
+            </div>
+            <div class="nav-menus">
+                <nav>
+                    <a href="#profile">Profile</a>
+                    <a href="#academics">Academics</a>
+                    <a href="#">Experiences</a>
+                    <a href="#">Hobby</a>
+                    <a href="#">JTK</a>
+                </nav>
+            </div>
+            <div class="nav-btn">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROFILE -->
+    <section class="welcome" id="home">
+        <div class="welcome-container">
+            <div class="welcome-stuff">
+                <div class="welcome-hello">
+                    <h1>Hello Everyone.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, recusandae non ea impedit facere neque ullam fuga, ipsa tenetur mollitia culpa perferendis repellat, aliquid iste. Sapiente ipsa ducimus earum maiores.
+                    Vel sed inventore a totam temporibus quaerat quam excepturi! Voluptates nostrum vero reprehenderit, alias quibusdam perferendis laboriosam sit illum ratione nemo molestias labore dicta sapiente, animi facilis, libero aliquid totam.</p>
+                </div>
+                <div class="welcome-btn">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <div class="welcome-photo">
+                <img src="/member/raihan/img/myfoto.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="profile" id="profile">
+            <div class="profile-container">
+                <div class="profile-title">
+                    <p>01</p>
+                    <h1>Profile</h1>
+                </div>
+                <div class="profile-details">
+                    
+                </div>
+        </div>
+    </section>
+
+    <section class="academics" id="academics">
+        <div class="academics-container">
+
+        </div>
+    </section>
+
+    <section class="hobby">
+        <div class="hobby-container">
+
+        </div>
+    </section>
+
+    <section class="jtk">
+        <div class="jtk-container"></div>
+    </section>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+    
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

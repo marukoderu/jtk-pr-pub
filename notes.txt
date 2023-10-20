@@ -1,0 +1,3 @@
+Jika terdapat masalah pada gambar yang tidak muncul bisa coba di akses menggunakan http://127.0.0.1 bukan http://localhost
+
+folder "jtk-pr" merupakan root directory. Jika ingin mengakses nya bisa dengan http://localhost/jtk-pr/index.html
