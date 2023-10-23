@@ -231,7 +231,7 @@ header {
   transition: 0.25s ease-in-out;
 }
 .profile .profile-container .profile__details .profile__details-img {
-  background-image: url("/img/myfoto-fix.jpg");
+  background-image: url("/member/raihan/img/myfoto-fix.jpg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
 }
