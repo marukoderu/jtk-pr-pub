@@ -160,7 +160,7 @@ header {
   gap: 1em;
 }
 .hero .hero-container .hero__banner .hero__banner-wrap .hero-img {
-  background-image: url("/member/raihan/img/hero-img.png");
+  background-image: url("/img/hero-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 20%;
@@ -231,7 +231,7 @@ header {
   transition: 0.25s ease-in-out;
 }
 .profile .profile-container .profile__details .profile__details-img {
-  background-image: url("/member/raihan/img/myfoto-fix.jpg");
+  background-image: url("/img/myfoto-fix.jpg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
 }
@@ -265,13 +265,13 @@ header {
   gap: 3em;
 }
 .sch .sch-container .sch__details .sch-imgs .sch-img-1 {
-  background-image: url("/member/raihan/img/smk.png");
+  background-image: url("/img/smk.png");
   background-size: 80% 65%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .sch .sch-container .sch__details .sch-imgs .sch-img-2 {
-  background-image: url("/member/raihan/img/sch.png");
+  background-image: url("/img/sch.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 50%;
@@ -343,14 +343,14 @@ header {
 }
 .exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card .exp-img-1 {
   height: 100%;
-  background-image: url("/member/raihan/img/exp1.png");
+  background-image: url("/img/exp1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
 .exp .exp-container .exp-wrap .exp__details .exp__cards .exp-card .exp-img-2 {
   height: 100%;
-  background-image: url("//member/raihan/img/bit.png");
+  background-image: url("//img/bit.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -454,21 +454,21 @@ header {
   transition: 0.25s ease-in-out;
 }
 .project .pro-container .pro-col-2 .pro-content .pro-item .pro-1 {
-  background-image: url("/member/raihan/img/project-1.png");
+  background-image: url("/img/project-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   background-position: 0% 50%;
 }
 .project .pro-container .pro-col-2 .pro-content .pro-item .pro-2 {
-  background-image: url("/member/raihan/img/project-2.png");
+  background-image: url("/img/project-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   background-position: 0% 50%;
 }
 .project .pro-container .pro-col-2 .pro-content .pro-item .pro-3 {
-  background-image: url("/member/raihan/img/project-3.png");
+  background-image: url("/img/project-3.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -562,7 +562,7 @@ header {
   color: #F4F6F0;
 }
 .project .project-container .project-wrap .contents .content-1 .content-img {
-  background-image: url("/member/raihan/img/project-1.png");
+  background-image: url("/img/project-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 40%;
@@ -570,7 +570,7 @@ header {
   height: 250px;
 }
 .project .project-container .project-wrap .contents .content-2 .content-img {
-  background-image: url("/member/raihan/img/project-2.png");
+  background-image: url("/img/project-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 40%;
@@ -578,7 +578,7 @@ header {
   height: 250px;
 }
 .project .project-container .project-wrap .contents .content-3 .content-img {
-  background-image: url("/member/raihan/img/project-3.png");
+  background-image: url("/img/project-3.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 100%;
@@ -628,19 +628,19 @@ header {
   background-position: 15% 35%;
 }
 .hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-3 {
-  background-image: url("/member/raihan/img/music.jpg");
+  background-image: url("/img/music.jpg");
   background-position: 0% 50%;
 }
 .hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-4 {
-  background-image: url("/member/raihan/img/animegif.gif");
+  background-image: url("/img/animegif.gif");
   background-position: 0% 50%;
 }
 .hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-5 {
-  background-image: url("/member/raihan/img/design.png");
+  background-image: url("/img/design.png");
   background-position: 0% 50%;
 }
 .hobby .hobby-container .hobby-wrap .hobby-list .hobby-item .hobby-6 {
-  background-image: url("/member/raihan/img/lang.png");
+  background-image: url("/img/lang.png");
   background-position: 0% 50%;
 }
 .hobby .hobby-container .hobby-wrap .hobby-list .hobby-item h1 {
